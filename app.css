@@ -1,0 +1,100 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.game {
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.container {
+    background: #bbada0;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.row {
+    padding: 4px;
+}
+
+.cell {
+    cursor: default;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    vertical-align: middle;
+    background: #7e7771;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.cell-2 {
+    background: #eee4da;
+}
+
+.cell-4 {
+    background: #eee1c9;
+}
+
+.cell-8 {
+    background: #f3b27a;
+}
+
+.cell-16 {
+    background: #f69664;
+}
+
+.cell-32 {
+    background: #f77c5f;
+}
+
+.cell-64 {
+    background: #f75f3b;
+}
+
+.cell-128 {
+    background: #edd073;
+    font-size: 47px;
+}
+
+.cell-256 {
+    background: #edcc62;
+    font-size: 47px;
+}
+
+.cell-512 {
+    background: #edc950;
+    font-size: 47px;
+}
+
+.cell-1024 {
+    background: #edc53f;
+    font-size: 33px;
+}
+
+.cell-2048 {
+    background: #edc22e;
+    font-size: 33px;
+}
+
+.cell-big-number {
+    background: #3c3a33;
+    font-size: 33px;
+}
+
+.cell-merged {
+    transition: all 0.1s;
+}
