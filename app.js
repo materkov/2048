@@ -50,8 +50,8 @@ class Game {
             do {
                 mutations = 0;
 
-                for (let x = 0; x < 4; x++) {
-                    for (let y = 0; y < 4; y++) {
+                for (let y = 0; y < 4; y++) {
+                    for (let x = 0; x < 4; x++) {
                         mutations += Number(this.doMove(x, y, 0, -1));
                     }
                 }
@@ -60,8 +60,8 @@ class Game {
             do {
                 mutations = 0;
 
-                for (let x = 0; x < 4; x++) {
-                    for (let y = 3; y >= 0; y--) {
+                for (let y = 0; y < 4; y++) {
+                    for (let x = 3; x >= 0; x--) {
                         mutations += Number(this.doMove(x, y, 0, +1));
                     }
                 }
@@ -70,8 +70,8 @@ class Game {
             do {
                 mutations = 0;
 
-                for (let y = 3; y >= 0; y--) {
-                    for (let x = 0; x < 4; x++) {
+                for (let x = 3; x >= 0; x--) {
+                    for (let y = 3; y >= 0; y--) {
                         mutations += Number(this.doMove(x, y, +1, 0));
                     }
                 }
@@ -80,8 +80,9 @@ class Game {
             do {
                 mutations = 0;
 
-                for (let y = 0; y < 4; y++) {
-                    for (let x = 3; x >= 0; x--) {
+                for (let x = 0; x < 4; x++) {
+                    for (let y = 0; y < 4; y++) {
+                        console.log(x, y);
                         mutations += Number(this.doMove(x, y, -1, 0));
                     }
                 }
