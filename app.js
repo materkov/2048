@@ -22,23 +22,10 @@ class Game {
             [0, 0, 0, 0],
         ];
 
-        this.resetStateClasses();
         this.render();
         document.onkeydown = ((e) => this.onKeyPress(e));
     }
 
-    resetStateClasses() {
-        this.stateClasses = [
-            ['', '', '', ''],
-            ['', '', '', ''],
-            ['', '', '', ''],
-            ['', '', '', ''],
-        ];
-    }
-
-    step() {
-        
-    }
 
     render() {
         let cells = document.querySelectorAll('.cell');
@@ -112,14 +99,6 @@ class Game {
         this.render();
     }
 
-    onArrowPress(key) {
-        // DOWN pressed
-        for (let i = 0; i < 4; i++) {
-            for (let j = 0; j < 4; j++) {
-            }
-        }
-    }
-
     doMove(x, y, offsetX, offsetY) {
         let digit = this.state[x][y];
         if (!digit) {
@@ -150,7 +129,7 @@ class Game {
             this.state[x][y] = 0;
             this.state[x + offsetX][y + offsetY] = digit * 2;
 
-            // move successful, merged together
+            // Move successful, merged together
             return true;
         } else {
             // another digit, cannot move
